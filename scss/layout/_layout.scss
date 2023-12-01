@@ -1,0 +1,47 @@
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+section#hero {
+    @include flex-center-column;
+    height: calc(100vh - $header-height);
+
+
+
+    background-color: #ccc;
+
+
+
+    h1 {
+        color: blue;
+    }
+
+    h2 {
+        color: green;
+    }
+
+}
+
+section#intro {
+
+    height: 100vh; 
+
+    h2 {
+        color: red;
+    }
+
+
+
+
+
+}

@@ -1,0 +1,47 @@
+
+
+header {
+    @include flex-center;
+    justify-content: end; 
+    height: $header-height;
+
+
+    nav {
+        // display: flex;
+        // // justify-content: space-between;
+        // align-items: space-around;
+        // gap: 1rem; 
+
+
+
+        .nav-right {
+
+            display: flex; 
+            gap: 16px;
+            margin: 16px; 
+
+
+
+            a {
+                color: black;
+                text-decoration: none;
+
+
+                p {
+
+                    color: blue; 
+
+
+
+                }
+
+
+
+            }
+
+
+        }
+
+    }
+
+}
