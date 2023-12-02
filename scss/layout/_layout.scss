@@ -10,27 +10,11 @@
 }
 
 
+section#hero-image {
 
-
-section#hero {
-    @include flex-center-column;
-    height: calc(100vh - $header-height);
-
-
-
-    background-color: #ccc;
-
-
-
-    h1 {
-        color: blue;
-    }
-
-    h2 {
-        color: green;
-    }
 
 }
+
 
 section#intro {
 
