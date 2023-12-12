@@ -5,22 +5,24 @@ header {
   justify-content: end;
   height: 80px;
 }
-header nav .nav-right {
+header nav.nav-right ul {
   display: flex;
   gap: 16px;
   margin: 16px;
+  list-style: none;
 }
-header nav .nav-right a {
-  color: black;
+header nav.nav-right ul a {
   text-decoration: none;
-}
-header nav .nav-right a p {
-  color: blue;
+  color: white;
 }
 
 section#hero-image {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 section#hero-image .hero-text {
   display: flex;
