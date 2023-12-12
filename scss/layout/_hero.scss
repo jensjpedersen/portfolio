@@ -2,9 +2,9 @@
 
 section#hero-image {
 
-    background-color: gray;
-    // height: calc(100vh - $header-height);
     height: 100vh; 
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/hero.jpg");
 
 
     .hero-text {

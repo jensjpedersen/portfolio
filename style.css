@@ -19,8 +19,14 @@ header nav .nav-right a p {
 }
 
 section#hero-image {
-  background-color: gray;
-  height: calc(100vh - 80px);
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/hero.jpg");
+}
+section#hero-image .hero-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 * {
