@@ -3,7 +3,20 @@
 section#hero-image {
 
     background-color: gray;
-    height: calc(100vh - $header-height);
+    // height: calc(100vh - $header-height);
+    height: 100vh; 
 
 
+    .hero-text {
+        @include flex-center-column; 
+
+
+
+
+
+    }
 }
+
+
+
+
