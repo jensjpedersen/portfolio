@@ -13,7 +13,20 @@ section#hero-image {
     .hero-text {
         @include flex-center-column; 
 
+        h1 {
+            font-size: 4rem;
+            text-align: center;
+            font-family: 'Audrey', sans-serif;
+            font-weight: medium; 
+            padding-top: 100px; 
+        }
 
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            font-family: 'Audrey', sans-serif;
+            font-weight: medium; 
+        }
 
 
 

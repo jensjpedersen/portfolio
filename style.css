@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "Sora";
+  src: url("../../fonts/Sora/Sora-SemiBold.ttf") format("truetype");
+  src: url("../../fonts/Sora/Sora-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Audrey";
+  src: url("../../fonts/Audrey/Audrey-Medium.otf") format("opentype");
+  src: url("../../fonts/Audrey/Audrey-Normal.otf") format("opentype");
+}
+body {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -29,6 +57,19 @@ section#hero-image .hero-text {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+section#hero-image .hero-text h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Audrey", sans-serif;
+  font-weight: medium;
+  padding-top: 100px;
+}
+section#hero-image .hero-text h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Audrey", sans-serif;
+  font-weight: medium;
 }
 
 * {
