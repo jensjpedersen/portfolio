@@ -1,13 +1,18 @@
 @font-face {
-  font-family: "Sora";
-  src: url("../../fonts/Sora/Sora-SemiBold.ttf") format("truetype");
-  src: url("../../fonts/Sora/Sora-Regular.ttf") format("truetype");
-}
-@font-face {
   font-family: "Audrey";
   src: url("../../fonts/Audrey/Audrey-Medium.otf") format("opentype");
   src: url("../../fonts/Audrey/Audrey-Normal.otf") format("opentype");
 }
+@font-face {
+  font-family: "Sora";
+  src: url("../../fonts/Sora/Sora-Regular.ttf") format("truetype");
+}
+* {
+  font-family: "Sora", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
 body {
   font-size: 100%;
 }
@@ -23,7 +28,8 @@ h2 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: semi-bold;
 }
 
 header {
@@ -33,15 +39,44 @@ header {
   justify-content: end;
   height: 80px;
 }
+header nav.nav-right {
+  margin-right: 50px;
+}
 header nav.nav-right ul {
   display: flex;
-  gap: 16px;
-  margin: 16px;
+  gap: 10px;
   list-style: none;
 }
 header nav.nav-right ul a {
   text-decoration: none;
   color: white;
+  text-shadow: black 1px 1px;
+  font-size: 1.5rem;
+  border-radius: 100px;
+  padding: 2px 16px;
+}
+header nav.nav-right ul a:hover {
+  text-shadow: white 1px 1px;
+}
+
+section#about {
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  grid-template-rows: 100px 1fr;
+}
+section#about h2 {
+  align-self: center;
+  grid-area: 1/1/2/3;
+  text-align: center;
+}
+section#about p {
+  grid-area: 2/1/3/2;
+  margin: 0 200px;
+}
+section#about .profile-picture {
+  grid-area: 2/2/3/3;
+  height: 100vh;
+  background-image: url("../../images/black-and-white-profile-pictures.jpg");
 }
 
 section#hero-image {
@@ -76,13 +111,16 @@ section#hero-image .hero-text h2 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+  font-weight: regular;
+}
+
+main {
+  padding: 0 50px;
 }
 
 section#intro {
   height: 100vh;
-}
-section#intro h2 {
-  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

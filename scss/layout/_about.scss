@@ -1,0 +1,41 @@
+
+section#about {
+
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    grid-template-rows: 100px 1fr;
+    // grid-column-gap: 50px;
+
+
+    h2 {
+        align-self: center;
+        grid-area: 1 / 1 / 2 / 3;
+        text-align: center;
+
+    }
+
+    p {
+        grid-area: 2 / 1 / 3 / 2;
+        margin: 0 200px; 
+        // margi
+
+
+    }
+
+    .profile-picture {
+
+        grid-area: 2 / 2 / 3 / 3;
+
+        height: 100vh; 
+        // width: 
+
+        background-image: url("../../images/black-and-white-profile-pictures.jpg");
+        // background-image: url("../images/black-and-white-profile-pictures.jpg");
+        // background: url("../../images/black-and-white-profile-pictures.jpg");
+
+
+
+    }
+
+
+}
