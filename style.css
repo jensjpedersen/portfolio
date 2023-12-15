@@ -40,10 +40,6 @@ p {
   font-weight: regular;
 }
 
-main {
-  padding: 0 50px;
-}
-
 section#intro {
   height: 100vh;
 }
@@ -100,6 +96,24 @@ section#about .profile-picture {
   background-image: url("../../images/black-and-white-profile-pictures.jpg");
 }
 
+@media only screen and (max-width: 768px) {
+  section#about h2 {
+    align-self: center;
+    grid-area: 1/1/2/3;
+    text-align: center;
+  }
+  section#about p {
+    grid-area: 2/1/3/3;
+    margin: 0 10%;
+    z-index: 1;
+  }
+  section#about .profile-picture {
+    grid-area: 1/1/3/3;
+    height: 100vh;
+    background-image: url("../../images/black-and-white-profile-pictures.jpg");
+    opacity: 0.5;
+  }
+}
 section#hero-image {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/hero.jpg");
