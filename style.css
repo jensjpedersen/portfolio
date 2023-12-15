@@ -87,13 +87,19 @@ section#about h2 {
   text-align: center;
 }
 section#about p {
+  max-width: 800px;
   grid-area: 2/1/3/2;
   margin: 0 10%;
+  justify-self: end;
 }
 section#about .profile-picture {
   grid-area: 2/2/3/3;
   height: 100vh;
+  height: 100%;
+  margin-right: 10px;
   background-image: url("../../images/black-and-white-profile-pictures.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 @media only screen and (max-width: 768px) {
