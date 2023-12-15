@@ -1,18 +1,27 @@
 
+$element-spacing: 50px;
+$header-height: 80px; 
+$outer-margin: 50px; 
 
 header {
     @include flex-center;
-    justify-content: end; 
+    justify-content: space-between; 
     height: $header-height;
 
+    nav.nav-left {
+        @include flex-center;
+        margin-left: $outer-margin;
+        gap: $element-spacing;
+
+    }
 
     nav.nav-right {
-        margin-right: 50px;
+        margin-right: $outer-margin;
 
         ul {
 
             display: flex; 
-            gap: 10px;
+            gap: $element-spacing;
             list-style: none;
 
             a {
@@ -20,10 +29,6 @@ header {
                 color: white; 
                 text-shadow: black 1px 1px; 
                 font-size: 1.5rem; 
-                // background: rgba(0, 0, 0, 0.1);
-                // margin: 0 16px;
-                border-radius: 100px;
-                padding: 2px 16px;
 
                 &:hover {
                     text-shadow: white 1px 1px;

@@ -52,15 +52,22 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: end;
+  justify-content: space-between;
   height: 80px;
+}
+header nav.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  gap: 50px;
 }
 header nav.nav-right {
   margin-right: 50px;
 }
 header nav.nav-right ul {
   display: flex;
-  gap: 10px;
+  gap: 50px;
   list-style: none;
 }
 header nav.nav-right ul a {
@@ -68,8 +75,6 @@ header nav.nav-right ul a {
   color: white;
   text-shadow: black 1px 1px;
   font-size: 1.5rem;
-  border-radius: 100px;
-  padding: 2px 16px;
 }
 header nav.nav-right ul a:hover {
   text-shadow: white 1px 1px;
@@ -77,8 +82,8 @@ header nav.nav-right ul a:hover {
 
 section#about {
   display: grid;
-  grid-template-columns: 1fr 500px;
-  grid-template-rows: 100px 1fr;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 150px 1fr;
 }
 section#about h2 {
   align-self: center;
@@ -87,7 +92,7 @@ section#about h2 {
 }
 section#about p {
   grid-area: 2/1/3/2;
-  margin: 0 200px;
+  margin: 0 10%;
 }
 section#about .profile-picture {
   grid-area: 2/2/3/3;
