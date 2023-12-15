@@ -170,5 +170,10 @@ section#hero-image .hero-text h2 {
   border: 1px solid #00b4d8;
   outline: none;
 }
+footer {
+  height: 200px;
+  background-color: black;
+  margin-top: 100px;
+}
 
 /*# sourceMappingURL=style.css.map */
