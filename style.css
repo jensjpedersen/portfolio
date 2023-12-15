@@ -148,6 +148,25 @@ section#hero-image .hero-text h2 {
   font-weight: medium;
 }
 
+section#projects {
+  color: red;
+}
+section#projects div.project-card div.img-container {
+  color: blue;
+}
+section#projects div.project-card div.icon-container {
+  height: 200px;
+  color: green;
+}
+section#projects div.project-card div.icon-container img {
+  filter: grayscale(100%);
+  height: 100%;
+}
+section#projects div.project-card div.icon-container img:hover {
+  filter: grayscale(0%);
+  scale: 1.1;
+}
+
 #contact {
   display: flex;
   align-items: center;
