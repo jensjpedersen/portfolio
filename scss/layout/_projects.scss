@@ -1,4 +1,15 @@
 
+.text-overlay {
+    color: white;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+
+.text-hover {
+    display: none;
+}
 
 
 section#projects {
@@ -12,6 +23,7 @@ section#projects {
         div.img-container {
             width: 300px;
             height: 200px;
+            position: relative;
 
 
             img {
@@ -22,11 +34,34 @@ section#projects {
 
                 &:hover {
                     filter: grayscale(0%);
+                    color: white;
+
+
                 }
 
             }
 
+            &:hover .text-overlay {
+                // opacity: 0;
+                display: none;
+                // display: hidden;
+                // top: 200%; /* Move the text off-screen when hovering over the image */
+            }
+
+            &:hover .text-hover {
+                display: block;
+                position: absolute;
+                top: 0%;
+                margin: 16px;
+                color: white;
+
+            }
+
+
+
         }
+
+
 
         div.icon-container {
             @include flex-center-column;

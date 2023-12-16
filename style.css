@@ -153,6 +153,17 @@ section#hero-image .hero-text h2 {
   font-weight: medium;
 }
 
+.text-overlay {
+  color: white;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.text-hover {
+  display: none;
+}
+
 section#projects div.project-card {
   display: flex;
   align-items: center;
@@ -161,6 +172,7 @@ section#projects div.project-card {
 section#projects div.project-card div.img-container {
   width: 300px;
   height: 200px;
+  position: relative;
 }
 section#projects div.project-card div.img-container img {
   height: 100%;
@@ -170,6 +182,17 @@ section#projects div.project-card div.img-container img {
 }
 section#projects div.project-card div.img-container img:hover {
   filter: grayscale(0%);
+  color: white;
+}
+section#projects div.project-card div.img-container:hover .text-overlay {
+  display: none;
+}
+section#projects div.project-card div.img-container:hover .text-hover {
+  display: block;
+  position: absolute;
+  top: 0%;
+  margin: 16px;
+  color: white;
 }
 section#projects div.project-card div.icon-container {
   display: flex;
