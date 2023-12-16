@@ -148,14 +148,30 @@ section#hero-image .hero-text h2 {
   font-weight: medium;
 }
 
-section#projects {
-  color: red;
+section#projects div.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 section#projects div.project-card div.img-container {
-  color: blue;
+  width: 300px;
+  height: 200px;
+}
+section#projects div.project-card div.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+section#projects div.project-card div.img-container img:hover {
+  filter: grayscale(0%);
 }
 section#projects div.project-card div.icon-container {
-  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100px;
   color: green;
 }
 section#projects div.project-card div.icon-container img {
